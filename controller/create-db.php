@@ -30,7 +30,7 @@
         echo "<p>Successfully created table: posts</p>";
     }
     
- else {
+    else {
         echo "<p>$connection->error</p>";
 }
 

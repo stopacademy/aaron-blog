@@ -35,7 +35,7 @@ class Database {
     }
 
     public function openConnection() {
-        $this->connection = new mysqli($this->host, $this->username, $this->password);
+        $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
         if ($this->connection->connect_error) {
             die("<p>Error: " . $this->connection->connect_error . "</p>");
